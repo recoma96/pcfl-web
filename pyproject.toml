@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pcfl-web"
+version = "1.0.0"
+description = "PCFL Web Edition"
+authors = ["recoma <seokbong60@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pcfl_web"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.0"
+pcfl = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
