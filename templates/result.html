@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% include 'includes/head.html' %}
+    <title>Result</title>
+</head>
+<body>
+    <div calss="main-layout">
+        <h3>교정에 성공했습니다. 아래 버튼을 눌러 파일을 다운로드 하세요.</h3>
+
+        <a href="/api/download/{{ data['serialNumber'] }}"><button type="button" class="btn btn-dark">다운로드</button></a>
+    </div>
+    {% include 'includes/foot.html' %}
+</body>
+</html>
